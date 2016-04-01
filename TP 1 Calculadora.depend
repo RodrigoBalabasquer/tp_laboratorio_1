@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1459355839 source:c:\users\rodrigo\desktop\utn programas\tp 1 calculadora\libreriadecalculadora.c
+	<stdio.h>
+	<stdlib.h>
+
+1459355776 source:c:\users\rodrigo\desktop\utn programas\tp 1 calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"libreriadeCalculadora.h"
+
+1459355776 c:\users\rodrigo\desktop\utn programas\tp 1 calculadora\libreriadecalculadora.h
+
