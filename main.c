@@ -22,12 +22,12 @@ int main()
         printf("ingrese su opcion: ");
         scanf("%d",&opcion);
         while(!validarRango(opcion,1,7))
-                {
-                    printf("error reingrese opcion: \n");
-                    scanf("%d",&opcion);
-                }
+        {
+            printf("error reingrese opcion: \n");
+            scanf("%d",&opcion);
+        }
         switch (opcion)
-            {
+        {
             case 1:
                 resultado = sumar(x,y);
                 printf("El resultado de la suma es %d\n",resultado);
@@ -45,19 +45,21 @@ int main()
                 {
                     printf("ERROR\n");
                 }
-                else {
-                division(x,y);
-                     }
+                else
+                {
+                    division(x,y);
+                }
                 break;
             case 5:
                 if (x < 0)
                 {
                     printf("ERROR\n");
                 }
-                else{
-                resultado = factorial(x);
-                printf("El resultado del factorial es %d\n",resultado);
-                    }
+                else
+                {
+                    resultado = factorial(x);
+                    printf("El resultado del factorial es %d\n",resultado);
+                }
                 break;
             case 6:
                 resultado = sumar(x,y);
@@ -70,20 +72,23 @@ int main()
                 {
                     printf("ERROR\n");
                 }
-                else {division(x,y);}
+                else
+                {
+                    division(x,y);
+                }
                 if (x < 0)
                 {
                     printf("ERROR\n");
                 }
                 else
-                    {
-                        resultado = factorial(x);
-                        printf("El resultado del factorial es %d\n",resultado);
-                    }
+                {
+                    resultado = factorial(x);
+                    printf("El resultado del factorial es %d\n",resultado);
+                }
                 break;
-            }
+        }
         system("pause");
-    }while(opcion != 7);
+    } while(opcion != 7);
     return 0;
 
 }

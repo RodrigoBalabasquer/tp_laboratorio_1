@@ -6,19 +6,19 @@
  * \return retorna 1 si esta dentro del rango o 0 si esta fuera del rango
  *
  */
- int validarRango(int x, int inf, int sup)
- {
-     int valido;
-     if (x >= inf && x <= sup)
-        {
-          valido = 1;
-        }
-     else
-        {
-          valido = 0;
-        }
-     return valido;
- }
+int validarRango(int x, int inf, int sup)
+{
+    int valido;
+    if (x >= inf && x <= sup)
+    {
+        valido = 1;
+    }
+    else
+    {
+        valido = 0;
+    }
+    return valido;
+}
 
 
 /** \brief realizamos la operacion de la suma
@@ -28,10 +28,10 @@
  * \return resultado de la suma
  *
  */
- int sumar(int num1, int num2)
- {
-     return num1 + num2;
- }
+int sumar(int num1, int num2)
+{
+    return num1 + num2;
+}
 
 /** \brief realizamos la operacion de la resta
  *
@@ -52,10 +52,10 @@
  * \return resultado de la multiplicacion
  *
  */
- int multiplicar(int num1, int num2)
- {
-     return num1 * num2;
- }
+int multiplicar(int num1, int num2)
+{
+    return num1 * num2;
+}
 
 /** \brief realizamos la operacion del factorial
  *
@@ -63,20 +63,26 @@
  * \return resultado del factorial del entero
  *
  */
- int factorial(int num1)
- {
-     int rta;
-     if (num1 > 0)
-     {
-          if (num1 == 1)
-            { rta = 1;}
-          else
-            { rta = num1 * factorial( num1 - 1);}
-     }
+int factorial(int num1)
+{
+    int rta;
+    if (num1 > 0)
+    {
+        if (num1 == 1)
+        {
+            rta = 1;
+        }
+        else
+        {
+            rta = num1 * factorial( num1 - 1);
+        }
+    }
     if (num1 == 0)
-        { rta = 0;}
-     return rta;
- }
+    {
+        rta = 0;
+    }
+    return rta;
+}
 
 /** \brief realizamos la operacion de la division
  *
@@ -85,7 +91,7 @@
  * \return resultado de la division
  *
  */
- int division(int num1,int num2)
+int division(int num1,int num2)
 {
     printf("El resultado de la division es %.2f\n",(float)num1/num2);
     return 0;
