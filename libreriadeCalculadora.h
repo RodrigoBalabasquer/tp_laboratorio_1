@@ -1,8 +1,13 @@
 int validarRango(int, int, int);
-int sumar(int, int );
-int restar(int, int );
-int multiplicar(int, int);
-int factorial(int);
-int division(int,int);
+
+float sumar(float, float);
+
+float restar(float, float );
+
+float multiplicar(float, float);
+
+float factorial(float);
+
+float division(float,float);
 
 

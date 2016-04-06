@@ -1,24 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
 /** \brief validamos si el entero esta dentro del rango 1-7
  *
  * \param entero a validar
  * \return retorna 1 si esta dentro del rango o 0 si esta fuera del rango
  *
  */
-int validarRango(int x, int inf, int sup)
-{
-    int valido;
-    if (x >= inf && x <= sup)
-    {
-        valido = 1;
-    }
-    else
-    {
-        valido = 0;
-    }
-    return valido;
-}
+ int validarRango(int x, int inf, int sup)
+ {
+     int valido;
+     if (x >= inf && x <= sup)
+        {
+          valido = 1;
+        }
+     else
+        {
+          valido = 0;
+        }
+     return valido;
+ }
 
 
 /** \brief realizamos la operacion de la suma
@@ -28,10 +26,10 @@ int validarRango(int x, int inf, int sup)
  * \return resultado de la suma
  *
  */
-int sumar(int num1, int num2)
-{
-    return num1 + num2;
-}
+ float sumar(float num1, float num2)
+ {
+     return num1 + num2;
+ }
 
 /** \brief realizamos la operacion de la resta
  *
@@ -40,7 +38,7 @@ int sumar(int num1, int num2)
  * \return resultado de la resta
  *
  */
- int restar(int num1, int num2)
+ float restar(float num1, float num2)
  {
      return num1 - num2;
  }
@@ -52,10 +50,10 @@ int sumar(int num1, int num2)
  * \return resultado de la multiplicacion
  *
  */
-int multiplicar(int num1, int num2)
-{
-    return num1 * num2;
-}
+ float multiplicar(float num1, float num2)
+ {
+     return num1 * num2;
+ }
 
 /** \brief realizamos la operacion del factorial
  *
@@ -63,26 +61,26 @@ int multiplicar(int num1, int num2)
  * \return resultado del factorial del entero
  *
  */
-int factorial(int num1)
-{
-    int rta;
-    if (num1 > 0)
-    {
-        if (num1 == 1)
-        {
-            rta = 1;
-        }
-        else
-        {
-            rta = num1 * factorial( num1 - 1);
-        }
-    }
+ float factorial(float num1)
+ {
+     int rta;
+     if (num1 > 0)
+     {
+          if (num1 == 1)
+          {
+              rta = 1;
+          }
+          else
+          {
+              rta = num1 * factorial( num1 - 1);
+          }
+     }
     if (num1 == 0)
     {
         rta = 0;
     }
     return rta;
-}
+ }
 
 /** \brief realizamos la operacion de la division
  *
@@ -91,7 +89,7 @@ int factorial(int num1)
  * \return resultado de la division
  *
  */
-int division(int num1,int num2)
+ float division(float num1,float num2)
 {
     printf("El resultado de la division es %.2f\n",(float)num1/num2);
     return 0;
