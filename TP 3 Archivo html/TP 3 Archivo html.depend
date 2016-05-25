@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1464035598 source:f:\utn programas\tp 3 archivo html\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libreria.h"
+
+1464037266 source:f:\utn programas\tp 3 archivo html\libreria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libreria.h"
+
+1464036870 f:\utn programas\tp 3 archivo html\libreria.h
+
